@@ -117,7 +117,7 @@ Feature: Test de API súper simple
     And match response.error == 'Character not found'
 
   Scenario: Eliminar personaje (exitoso)
-    Given path '/api/characters/', 12
+    Given path '/api/characters/', 9
     When method delete
     Then status 204
 
